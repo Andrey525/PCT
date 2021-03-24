@@ -1,0 +1,12 @@
+*
+!!README.md
+!.gitignore
+!*.c
+!Makefile
+!*.h
+!Lab1
+!Lab2
+!Lab3
+!branch
+!dgemm
+!loop
