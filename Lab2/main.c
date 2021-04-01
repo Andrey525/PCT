@@ -153,6 +153,7 @@ void run_parallel(int m, int n)
     t = wtime() - t;
     printf("Elapsed time (parallel): %.6f sec.\n", t);
     // print_all(a, b, c, m, n);
+    printf("c[0] = %lf\n", c[0]);
     free(a);
     free(b);
     free(c);
@@ -160,7 +161,7 @@ void run_parallel(int m, int n)
 
 int main(int argc, char** argv)
 {
-    int m = 12000, n = 12000; // m - число строк, n - число столбцов
+    int m = 15000, n = 15000; // m - число строк, n - число столбцов
     printf("Memory used: %" PRIu64 " MiB\n", ((m * n + m + n) * sizeof(double)) >> 20);
     double t = wtime();
     run_serial(m, n);
